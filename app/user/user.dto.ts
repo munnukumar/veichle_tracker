@@ -1,10 +1,11 @@
 import { type BaseSchema } from "../common/dto/base.dto";
 
 export interface IUser extends BaseSchema {
+    _id: string;
     name: string;
     email: string;
     password: string;
-    role: "ADMIN" | "FREELANCER" | "CLIENT";
+    role: "ADMIN" | "USER";
     isBlocked: boolean;
     image?: string;
     isEmailVerified: boolean;

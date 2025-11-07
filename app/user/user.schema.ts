@@ -9,8 +9,8 @@ const UserSchema = new mongoose.Schema<IUser>(
         password: { type: String, required: true },
         role: {
             type: String,
-            enum: ["ADMIN", "FREELANCER", "CLIENT"],
-            required: true,
+            enum: ["ADMIN","USER"],
+            default: "USER",
         },
         isBlocked: { type: Boolean, default: false },
         image: { type: String },

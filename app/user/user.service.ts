@@ -36,6 +36,14 @@ export const updateUser = async (
     return updatedData;
 }
 
+export const editUser = async (id: string, data: Partial<IUser>) => {
+  const result = await UserModel.findOneAndUpdate({ _id: id }, data, {
+    new: true,
+    select: "-password -refreshToken -facebookId",
+  });
+  return result;
+};
+
 export const getUserByEmail = async (
     email: string,
     projection?: ProjectionType<IUser>

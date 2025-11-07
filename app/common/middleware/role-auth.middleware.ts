@@ -8,9 +8,15 @@ import { type IUser } from "../../user/user.dto";
 declare global {
     namespace Express {
       interface Request {
-        user?: IUser;
+        user?: User;
       }
     }
+
+    namespace Passport {
+        interface User {
+          user?: IUser;  // Override Passport's `user` to be of type `IUser`
+        }
+      }
   }
 
 export const roleAuth = (roles: IUser["role"][], publicRoutes: string[] = []) =>

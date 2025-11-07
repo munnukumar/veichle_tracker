@@ -1,7 +1,7 @@
 {
     "watch": ["app", "index.ts"],
     "ext": "ts,json",
-    "ignore": ["dist"],
+    "ignore": ["dist", "app/docs/swagger.json"],
     "exec": "ts-node ./index.ts"
   }
   
