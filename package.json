@@ -8,7 +8,7 @@
     "prod": "node dist/index.js",
     "seeder": "ts-node app/seeders/userSeeder.ts",
     "generate-swagger": "ts-node app/docs/swagger.ts",
-  "dev": "npm run generate-swagger && nodemon index.ts"
+    "dev": "npm run generate-swagger && nodemon index.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
     "@types/bcryptjs": "^2.4.6",
+    "@types/connect": "^3.4.38",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
     "@types/express-validator": "^2.20.33",
@@ -38,10 +39,12 @@
     "bcryptjs": "^3.0.3",
     "cloudinary": "^2.8.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dayjs": "^1.11.19",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^8.2.1",
     "express-swagger-generator": "^1.1.17",
     "express-validator": "^7.3.0",
     "ioredis": "^5.8.2",
@@ -51,6 +54,7 @@
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
+    "razorpay": "^2.9.6",
     "redis": "^5.9.0",
     "stripe": "^19.3.0",
     "swagger-autogen": "^2.23.7",

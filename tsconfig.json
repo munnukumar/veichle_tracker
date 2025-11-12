@@ -1,17 +1,21 @@
+
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "rootDir": "./",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node"
-  },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules", "dist"]
-}
+    "compilerOptions": {
+      "target": "ES2020",
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "types": ["node", "express"],
+      "outDir": "./dist",
+      "rootDir": "./",
+      "lib": ["es2020"]
+    },
+    "include": ["**/*.ts"],  // Changed to include all .ts files in the root and subdirectories
+    "exclude": ["node_modules", "dist"]
+  }
+  

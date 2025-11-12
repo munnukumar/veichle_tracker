@@ -1,32 +1,35 @@
-// backend/app/docs/swagger.ts
-import swaggerAutogen from "swagger-autogen";
+// // backend/app/docs/swagger.ts
+// import swaggerAutogen from "swagger-autogen";
 
-const doc = {
-  info: {
-    title: "My Project API",
-    description: "Auto-generated Swagger documentation for my project",
-    version: "1.0.0",
-  },
-  servers: [
-    {
-      url: "http://localhost:5000/api",
-      description: "Local development server",
-    },
-  ],
-};
+// const doc = {
+//   info: {
+//     title: "My Project API",
+//     description: "Auto-generated Swagger documentation for my project",
+//     version: "1.0.0",
+//     contact: {
+//       name: "API Support",
+//       email: "support@example.com",
+//     }
+//   },
+//   host: "localhost:5000", 
+//   basePath: "/api",
+//   schemes: ["http"],
+//   consumes: ["application/json"],
+//   produces: ["application/json"],
+// };
 
-const outputFile = `${__dirname}/swagger.json`; // outputs to backend/app/docs/swagger.json
-const endpointsFiles = [
-    "./app/routes.ts",      // main routes file
-    // "./app/user/user.route.ts",
-];
+// const outputFile = `./swagger.json`;
+// const endpointsFiles = [
+//     // "./app/routes.ts",   
+//     "../user/user.route.ts",
+// ];
 
-console.log("Generating Swagger documentation...", endpointsFiles);
+// console.log("Generating Swagger documentation...", endpointsFiles);
 
-swaggerAutogen({ openapi: "3.0.0" })(outputFile, endpointsFiles, doc)
-  .then(() => {
-    console.log("✅ Swagger file generated successfully!");
-  })
-  .catch((err) => {
-    console.error("❌ Swagger generation failed:", err);
-  });
+// swaggerAutogen({ openapi: "3.0.0" })(outputFile, endpointsFiles, doc)
+//   .then(() => {
+//     console.log("✅ Swagger file generated successfully!");
+//   })
+//   .catch((err) => {
+//     console.error("❌ Swagger generation failed:", err);
+//   });

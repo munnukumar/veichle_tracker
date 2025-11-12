@@ -8,7 +8,12 @@ export const catchError = expressAsyncHandler(
     const errors = validationResult(req);
     const isError = errors.isEmpty();
 
+    console.log("Validation Errors:", errors.array());
+    console.log("Validation Errors:", isError);
+
+
     if (!isError) {
+      console.log("Validation errors found");
       const data = { errors: errors.array() };
       throw createHttpError(400, {
         message: "Validation error!",

@@ -39,8 +39,10 @@ export const updateUser = async (
 export const editUser = async (id: string, data: Partial<IUser>) => {
   const result = await UserModel.findOneAndUpdate({ _id: id }, data, {
     new: true,
-    select: "-password -refreshToken -facebookId",
+    select: "-password -refreshToken",
   });
+
+  console.log("Edited User:", result)
   return result;
 };
 

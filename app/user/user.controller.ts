@@ -6,7 +6,6 @@ import { createUserTokens } from "../common/services/passport-jwt.service";
 import * as userService from "./user.service";
 import {type IUser} from "./user.dto";
 
-
 export const createUser = asyncHandler(
     async (req: Request, res: Response) => {
         const userData = req.body;
@@ -19,10 +18,17 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
     const user = req.user as IUser;
     const { password, ...userWithoutPassword } = req.user as IUser;;
     const tokens = createUserTokens(userWithoutPassword);
-    await userService.editUser(user._id, {
+    const response = await userService.editUser(user._id, {
       refreshToken: tokens.refreshToken,
     });
-    res.send(createResponse(tokens));
+
+    const resData = {
+        user: response,
+        tokens,
+    }
+
+    console.log("res ===> ",  response)
+    res.send(createResponse(resData));
   });
 
 export const getUserById = asyncHandler(
@@ -45,7 +51,8 @@ export const getAllUsers = asyncHandler(
 
 export const updateUser = asyncHandler(
     async (req: Request, res: Response) => {
-        const userId = req.params.id;
+        console.log("Update User Controller Invoked",req.user);
+        const userId =(req.user as IUser)._id;;
         const updateData = req.body;
         const updatedUser = await userService.updateUser(userId, updateData);
         if (!updatedUser) {

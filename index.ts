@@ -1,14 +1,17 @@
 import express, { Request, Response } from "express";
-import { setupSwagger } from "./app/config/swagger.config";
+import { loadConfig } from "./app/common/helper/config.helper"; 
+loadConfig();
+// import { setupSwagger } from "./app/config/swagger.config";
 import cors from "cors";
 import { connectDB } from "./app/common/services/database.service";
 import { redisClient } from "./app/common/services/redis.service";
 import routes from "./app/routes";
-import { loadConfig } from "./app/common/helper/config.helper"; 
 import  { initPassport } from "./app/common/services/passport-jwt.service";
+import { setupSwagger } from './app/config/swagger.config';
+import { apiRateLimiter, loginRateLimiter } from './app/config/rateLimiter';
+import logger from './app/common/utils/logger';
+import path from "path";
 
-
-loadConfig();
 // dotenv.config({ path: ".env" });
 
 const app = express();
@@ -16,21 +19,38 @@ initPassport();
 app.use(cors());
 app.use(express.json());
 
+// Apply the general rate limiter for all API routes
+app.use('/api', apiRateLimiter);
+
+// Serve static files from the uploads directory
+app.use("/uploads", express.static(path.join(process.cwd(), "uploads")))
+
+// Apply the login rate limiter specifically to the login route
+app.use('/api/users/login', loginRateLimiter);
+
+// Swagger Documentation
+setupSwagger(app);
+
 // Routes
 app.use("/api", routes);
 
-// app.get("/", (req: Request, res: Response) => {
-//   res.send("FreelanceHub API is running...");
-// });
+// Global error handling middleware
+app.use((err: any, req: any, res: any, next: any) => {
+  // Log error
+  logger.error(`Error occurred: ${err.message}\nStack: ${err.stack}`);
 
-setupSwagger(app);
+  // Respond to client
+  res.status(500).json({
+    message: 'Something went wrong!',
+    error: err.message,
+  });
+});
 
-// Connect DB & Redis, then start server
 const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
     try {
-      await connectDB(); // connect MongoDB
+      await connectDB();
       if (redisClient.status !== "ready") {
         console.log("Waiting for Redis...");
         await new Promise((resolve) => {

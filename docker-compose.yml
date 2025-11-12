@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+  backend:
+    build: .
+    container_name: backend
+    ports:
+      - "5002:5000"  # Host:Container Port mapping
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongodb:27017/freelancehub  # MongoDB URI
+      - REDIS_HOST=redis  # Redis Host
+      - PORT=5000
+    depends_on:
+      - mongodb
+      - redis
+    env_file:
+      - .env  # Use the existing .env file for other environment variables
+
+  mongodb:
+    image: mongo:5.0  # Fixed version for MongoDB
+    container_name: mongodb
+    ports:
+      - "27019:27017"
+    volumes:
+      - mongodb_data:/data/db  # Simplified volume
+
+  redis:
+    image: redis:6.2  # Fixed version for Redis
+    container_name: redis
+    ports:
+      - "6381:6379"
+    volumes:
+      - redis_data:/data  # Volume for Redis
+
+volumes:
+  mongodb_data:
+    driver: local
+  redis_data:
+    driver: local

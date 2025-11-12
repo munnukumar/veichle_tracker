@@ -1,0 +1,327 @@
+[2025-11-11 12:02:55] ERROR: Error occurred: Invalid email or password
+Stack: UnauthorizedError: Invalid email or password
+    at Strategy._verify (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/services/passport-jwt.service.ts:72:41)
+[2025-11-11 12:09:08] ERROR: Error occurred: Invalid token
+Stack: UnauthorizedError: Invalid token
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:31:38
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at param (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:600:14)
+    at param (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:610:14)
+[2025-11-11 12:34:53] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:13:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 12:36:51] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:13:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 12:37:20] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:13:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 12:42:11] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:13:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 12:44:23] ERROR: Error occurred: invalid signature
+Stack: BadRequestError: invalid signature
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:47:38
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 13:04:41] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:13:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 13:06:15] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 13:10:22] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 13:10:52] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 13:13:10] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:23:7
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 13:59:03] ERROR: Error occurred: Invalid token
+Stack: UnauthorizedError: Invalid token
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:31:38
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-11 15:50:54] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-11 16:41:16] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-11 16:49:17] ERROR: Error occurred: Invalid Razorpay signature
+Stack: BadRequestError: Invalid Razorpay signature
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/payment/payment.controller.ts:63:26
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:23:7
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 17:04:03] ERROR: Error occurred: Invalid Razorpay signature
+Stack: BadRequestError: Invalid Razorpay signature
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/payment/payment.controller.ts:74:26
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:23:7
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-11 17:05:00] ERROR: Error occurred: Invalid Razorpay signature
+Stack: BadRequestError: Invalid Razorpay signature
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/payment/payment.controller.ts:77:26
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:23:7
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-12 12:57:34] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+[2025-11-12 12:58:56] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+[2025-11-12 12:59:15] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+[2025-11-12 13:02:25] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+[2025-11-12 13:06:20] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+[2025-11-12 13:07:39] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+[2025-11-12 13:12:02] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+[2025-11-12 15:51:39] ERROR: Error occurred: Invalid email or password
+Stack: UnauthorizedError: Invalid email or password
+    at Strategy._verify (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/services/passport-jwt.service.ts:72:41)
+[2025-11-12 16:58:41] ERROR: Error occurred: jwt malformed
+Stack: BadRequestError: jwt malformed
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:47:38
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-12 16:58:48] ERROR: Error occurred: jwt malformed
+Stack: BadRequestError: jwt malformed
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:47:38
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-12 17:11:00] ERROR: Error occurred: jwt malformed
+Stack: BadRequestError: jwt malformed
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:47:38
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-12 17:36:49] ERROR: Error occurred: jwt malformed
+Stack: BadRequestError: jwt malformed
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:47:38
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-12 17:37:34] ERROR: Error occurred: jwt malformed
+Stack: BadRequestError: jwt malformed
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:47:38
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-12 18:01:38] ERROR: Error occurred: Unexpected field
+Stack: MulterError: Unexpected field
+    at wrappedFileFilter (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/multer/index.js:40:19)
+    at Multipart.<anonymous> (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/multer/lib/make-middleware.js:132:7)
+    at Multipart.emit (node:events:524:28)
+    at Multipart.emit (node:domain:489:12)
+    at HeaderParser.cb (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:394:37)
+    at feed (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/streamsearch/lib/sbmh.js:248:10)
+    at SBMH.push (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/streamsearch/lib/sbmh.js:104:16)
+    at Multipart._write (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:567:19)
+[2025-11-12 18:06:44] ERROR: Error occurred: Unexpected field
+Stack: MulterError: Unexpected field
+    at wrappedFileFilter (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/multer/index.js:40:19)
+    at Multipart.<anonymous> (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/multer/lib/make-middleware.js:132:7)
+    at Multipart.emit (node:events:524:28)
+    at Multipart.emit (node:domain:489:12)
+    at HeaderParser.cb (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:394:37)
+    at feed (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/streamsearch/lib/sbmh.js:200:10)
+    at SBMH.push (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/streamsearch/lib/sbmh.js:104:16)
+    at Multipart._write (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:567:19)
+[2025-11-12 18:13:43] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/catch-error.middleware.ts:18:28
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-11-12 18:16:35] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
