@@ -325,3 +325,102 @@ Stack: UnauthorizedError: Token expired
     at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
     at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
     at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-13 11:30:41] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-13 11:33:27] ERROR: Error occurred: Invalid file type. Upload zip/pdf/png/jpg only.
+Stack: Error: Invalid file type. Upload zip/pdf/png/jpg only.
+    at fileFilter (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/upload.middleware.ts:36:15)
+    at wrappedFileFilter (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/multer/index.js:44:7)
+    at Multipart.<anonymous> (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/multer/lib/make-middleware.js:132:7)
+    at Multipart.emit (node:events:524:28)
+    at Multipart.emit (node:domain:489:12)
+    at HeaderParser.cb (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:358:14)
+    at HeaderParser.push (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/busboy/lib/types/multipart.js:394:37)
+    at feed (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/streamsearch/lib/sbmh.js:248:10)
+    at SBMH.push (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/streamsearch/lib/sbmh.js:104:16)
+[2025-11-13 13:19:01] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-13 13:33:44] ERROR: Error occurred: Cannot read properties of undefined (reading 'status')
+Stack: TypeError: Cannot read properties of undefined (reading 'status')
+    at normalizeError (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/razorpay/dist/api.js:42:30)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/payment/payment.controller.ts:24:17
+[2025-11-13 13:34:02] ERROR: Error occurred: Cannot read properties of undefined (reading 'status')
+Stack: TypeError: Cannot read properties of undefined (reading 'status')
+    at normalizeError (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/razorpay/dist/api.js:42:30)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/payment/payment.controller.ts:24:17
+[2025-11-13 14:04:20] ERROR: Error occurred: Cannot read properties of undefined (reading 'status')
+Stack: TypeError: Cannot read properties of undefined (reading 'status')
+    at normalizeError (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/razorpay/dist/api.js:42:30)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/payment/payment.controller.ts:24:17
+[2025-11-13 15:51:29] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-13 15:51:29] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-13 15:51:32] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-13 16:38:55] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/app/common/middleware/role-auth.middleware.ts:40:42
+    at asyncUtilWrap (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/lib/layer.js:152:17)
+    at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
+    at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
+    at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)

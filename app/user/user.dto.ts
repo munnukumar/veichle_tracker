@@ -6,6 +6,8 @@ export interface IUser extends BaseSchema {
     email: string;
     password: string;
     role: "ADMIN" | "USER";
+    projectsPosted: string[];
+    projectsPurches: string[];
     isBlocked: boolean;
     image?: string;
     isEmailVerified: boolean;

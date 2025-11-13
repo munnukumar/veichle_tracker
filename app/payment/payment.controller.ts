@@ -1,5 +1,3 @@
-// src/modules/payment/payment.controller.ts
-
 import asyncHandler from "express-async-handler";
 import { Request, Response } from "express";
 import crypto from "crypto";
@@ -14,45 +12,45 @@ import * as projectService from "../project/project.service";
 export const createRazorpayOrder = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user as any)._id;
   const { projectId } = req.body;
+  console.log("Creating Razorpay order for projectId:", projectId, "by userId:", userId);
 
   const project = await projectService.fetchProjectById(projectId);
-
   if (!project) throw createHttpError(404, "Project not found");
 
-  // Create Razorpay order
+  // ✅ 1️⃣ Check if user already has a pending transaction for this project
+  const existingPendingTx = await paymentService.findPendingTransaction(userId, projectId);
+
+  // ✅ 2️⃣ Always create a fresh Razorpay order (since order_id is required each time)
   const order = await razorpay.orders.create({
-    amount: project.price * 100, // paise
+    amount: project.price * 100,
     currency: "INR",
     receipt: `receipt_${Date.now()}`,
   });
 
-  // Create pending transaction
-  const transaction = await paymentService.createTransaction({
-    user: userId,
-    project: projectId,
-    amount: project.price,
-    paymentStatus: "PENDING",
-    paymentMethod: "razorpay",
-    transactionId: order.id,
-  });
+  let transaction;
 
-let razorpay_order_id = order.id;
-let razorpay_payment_id = "test_payment_id";
-const signBody = razorpay_order_id + "|" + razorpay_payment_id;
+  if (existingPendingTx) {
+    console.log("Reusing existing pending transaction:", existingPendingTx._id);
 
-  const signature = crypto
-    .createHmac("sha256", process.env.RAZORPAY_SECRET!)
-    .update(signBody)
-    .digest("hex");
-
-console.log(signature);
+    // ✅ Update transactionId with the new Razorpay order ID
+    transaction = await paymentService.updateTransactionOrderId(existingPendingTx._id, order.id);
+  } else {
+    // ✅ Create a new pending transaction
+    transaction = await paymentService.createTransaction({
+      user: userId,
+      project: projectId,
+      amount: project.price,
+      paymentStatus: "PENDING",
+      paymentMethod: "razorpay",
+      transactionId: order.id,
+    });
+  }
 
   res.send(
     createResponse(
       {
         order,
-        transactionId: transaction._id,
-        signature
+        transactionId: (transaction as any)._id ,
       },
       "Razorpay order created"
     )
@@ -64,22 +62,19 @@ console.log(signature);
 export const verifyRazorpayPayment = asyncHandler(async (req: Request, res: Response) => {
   const { razorpay_order_id, razorpay_payment_id, razorpay_signature, transactionId } = req.body;
 
+  console.log("Verifying payment with data:", { razorpay_order_id, razorpay_payment_id, razorpay_signature, transactionId });
+
   const signBody = razorpay_order_id + "|" + razorpay_payment_id;
-
-  console.log("Sign Body:", signBody);
-
   const expectedSignature = crypto
     .createHmac("sha256", process.env.RAZORPAY_SECRET!)
     .update(signBody)
     .digest("hex");
 
-    console.log("Expected Signature:", expectedSignature);
-    console.log("Received Signature:", razorpay_signature);
-
   if (expectedSignature !== razorpay_signature) {
     throw createHttpError(400, "Invalid Razorpay signature");
   }
 
+  // ✅ Mark payment as success (update same transaction)
   const updated = await paymentService.updatePaymentStatus(
     transactionId,
     "SUCCESS",
@@ -93,7 +88,6 @@ export const verifyRazorpayPayment = asyncHandler(async (req: Request, res: Resp
 // Razorpay Webhook
 export const razorpayWebhook = asyncHandler(async (req: Request, res: Response) => {
   const signature = req.headers["x-razorpay-signature"] as string;
-
   const payload = JSON.stringify(req.body);
 
   const expectedSignature = crypto
@@ -102,12 +96,10 @@ export const razorpayWebhook = asyncHandler(async (req: Request, res: Response) 
     .digest("hex");
 
   if (expectedSignature !== signature) {
-    res.status(400).send("Invalid webhook signature");
-    return;
+    throw createHttpError(400, "Invalid webhook signature");
   }
 
   const event = req.body;
-
   if (event.event === "payment.captured") {
     const paymentId = event.payload.payment.entity.id;
     const orderId = event.payload.payment.entity.order_id;
@@ -122,9 +114,7 @@ export const razorpayWebhook = asyncHandler(async (req: Request, res: Response) 
 // Get logged-in user's payments
 export const getUserPayments = asyncHandler(async (req: Request, res: Response) => {
   const userId = (req.user as any)._id;
-
   const payments = await paymentService.getPaymentsByUser(userId);
-
   res.send(createResponse(payments, "Payments fetched successfully"));
 });
 
@@ -132,8 +122,6 @@ export const getUserPayments = asyncHandler(async (req: Request, res: Response) 
 // Get payments for a project
 export const getPaymentsByProject = asyncHandler(async (req: Request, res: Response) => {
   const { projectId } = req.params;
-
   const payments = await paymentService.getPaymentsByProject(projectId);
-
   res.send(createResponse(payments, "Project payments fetched successfully"));
 });

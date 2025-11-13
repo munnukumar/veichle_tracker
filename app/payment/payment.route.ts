@@ -32,4 +32,12 @@ router.post(
   paymentController.razorpayWebhook
 );
 
+router.get(
+  "/user",
+  roleAuth(["USER", "ADMIN"]),
+  catchError,
+  paymentController.getUserPayments
+);
+
+
 export default router;

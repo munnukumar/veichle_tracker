@@ -12,6 +12,8 @@ const UserSchema = new mongoose.Schema<IUser>(
             enum: ["ADMIN","USER"],
             default: "USER",
         },
+        projectsPosted: [{ type: mongoose.Schema.Types.ObjectId, ref: "project" }],
+        projectsPurches: [{ type: mongoose.Schema.Types.ObjectId, ref: "project" }],
         isBlocked: { type: Boolean, default: false },
         image: { type: String },
         isEmailVerified: { type: Boolean, default: false },
