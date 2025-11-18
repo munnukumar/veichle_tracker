@@ -1,56 +1,74 @@
-import { ProjectionType, QueryOptions } from "mongoose";
-import {type IUser} from "./user.dto";
+// app/user/user.service.ts
+
+import { IUser, IKycDetails } from "./user.dto";
 import UserModel from "./user.schema";
+import { ProjectionFields } from "mongoose";
+import bcrypt from "bcryptjs";
 
-
+// -----------------------------------------------------
+// Create User
+// -----------------------------------------------------
 export const createUser = async (
-    data: Omit<IUser, "_id" | "createdAt" | "updatedAt">
-  ) => {
-    const result = await UserModel.create(data);
-    const { refreshToken, password, ...user } = result.toJSON();
-    return user;
-  };
-
-export const fetchUserById = async (
-    id: string,
-    projection?: ProjectionType<IUser>,
-    options?: QueryOptions<IUser>
+  data: Omit<IUser, "_id" | "createdAt" | "updatedAt">
 ) => {
-    const user = await UserModel.findById(id, projection, options);
-    return user;
-}
+  const user = await UserModel.create(data);
+  const { password, refreshToken, ...cleanUser } = user.toJSON();
+  return cleanUser;
+};
 
-export const fetchAllUsers = async (
-    projection?: ProjectionType<IUser>,
-    options?: QueryOptions<IUser>
-) => {
-    const users = await UserModel.find({}, projection, options);
-    return users;
-}
+// -----------------------------------------------------
+// Fetch User by ID
+// -----------------------------------------------------
+export const fetchUserById = async (id: string) => {
+  return UserModel.findById(id).select("-password -refreshToken");
+};
 
-export const updateUser = async (
-    id : string,
-    data: Partial<IUser>
-) => {
-    const updatedData = await UserModel.findOneAndUpdate({_id:id}, data, { new: true });
-    return updatedData;
-}
+// -----------------------------------------------------
+// Fetch All Users
+// -----------------------------------------------------
+export const fetchAllUsers = async () => {
+  return UserModel.find().select("-password -refreshToken");
+};
 
-export const editUser = async (id: string, data: Partial<IUser>) => {
-  const result = await UserModel.findOneAndUpdate({ _id: id }, data, {
+// -----------------------------------------------------
+// Update Logged-In User (Self Update)
+// -----------------------------------------------------
+export const updateUser = async (id: string, data: Partial<IUser>) => {
+  // If password exists → hash manually (pre-save does NOT run on findByIdAndUpdate)
+  if (data.password) {
+    const salt = await bcrypt.genSalt(10);
+    data.password = await bcrypt.hash(data.password, salt);
+  }
+
+  return UserModel.findByIdAndUpdate(id, data, {
     new: true,
     select: "-password -refreshToken",
   });
-
-  console.log("Edited User:", result)
-  return result;
 };
 
-export const getUserByEmail = async (
-    email: string,
-    projection?: ProjectionType<IUser>
-  ) => {
-    const result = await UserModel.findOne({ email }, projection).lean();
-    return result;
-  };
+// -----------------------------------------------------
+// ADMIN: Update User KYC
+// -----------------------------------------------------
+export const updateUserKYC = async (
+  id: string,
+  kycData: Partial<IKycDetails>
+) => {
+  return UserModel.findByIdAndUpdate(
+    id,
+    { $set: { kyc: kycData } },
+    {
+      new: true,
+      select: "-password -refreshToken",
+    }
+  );
+};
 
+// -----------------------------------------------------
+// Get User by Email (with projection)
+// -----------------------------------------------------
+export const getUserByEmail = async (
+  email: string,
+  projection: ProjectionFields<IUser> = {}
+) => {
+  return await UserModel.findOne({ email }, projection).lean();
+};

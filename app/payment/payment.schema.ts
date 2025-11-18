@@ -1,48 +1,25 @@
-import mongoose from "mongoose";
-import { Types } from "mongoose";
-export interface ITransaction {
-    _id: string;
+// app/payment/payment.schema.ts
+import mongoose, { Schema, Types } from "mongoose";
+import { IPayment } from "./payment.dto";
 
-    user: Types.ObjectId;
-    project: Types.ObjectId;
+const PaymentSchema = new Schema<IPayment>(
+  {
+    user: { type: Types.ObjectId, ref: "User", required: true },
+    booking: { type: Types.ObjectId, ref: "Booking", required: true },
 
-    amount: number;
+    amount: { type: Number, required: true },
 
-    paymentStatus: "PENDING" | "SUCCESS" | "FAILED";
-    transactionId?: string;
-
-    paymentMethod?: string; 
-}
-
-const TransactionSchema = new mongoose.Schema<ITransaction>(
-    {
-        user: { 
-            type: mongoose.Schema.Types.ObjectId, 
-            ref: "User", 
-            required: true 
-        },
-
-        project: { 
-            type: mongoose.Schema.Types.ObjectId, 
-            ref: "Project", 
-            required: true 
-        },
-
-        amount: { type: Number, required: true },
-
-        paymentStatus: {
-            type: String,
-            enum: ["PENDING", "SUCCESS", "FAILED"],
-            default: "PENDING",
-        },
-
-        transactionId: { type: String },
-
-        paymentMethod: { type: String },
+    paymentStatus: {
+      type: String,
+      enum: ["PENDING", "SUCCESS", "FAILED", "REFUNDED"], 
+      default: "PENDING",
     },
-    {
-        timestamps: true,
-    }
+
+    transactionId: { type: String }, 
+    paymentId: { type: String },     // Razorpay Order ID or Payment ID
+    paymentMethod: { type: String },      // razorpay
+  },
+  { timestamps: true }
 );
 
-export const TransactionModel = mongoose.model<ITransaction>("Transaction", TransactionSchema);
+export const PaymentModel = mongoose.model<IPayment>("Payment", PaymentSchema);

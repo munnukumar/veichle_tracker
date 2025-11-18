@@ -1,34 +1,38 @@
-import { body } from 'express-validator';
+// app/user/user.validation.ts
+import { body } from "express-validator";
 
 export const createUser = [
-    body('name').notEmpty().withMessage('name is required').isString().withMessage('name must be a string'),
-    body('email').notEmpty().withMessage('email is required').isString().withMessage('email must be a string'),
-    // body('role').isString().withMessage('active must be a boolean'),
-    body('password').notEmpty().withMessage('password is required').isString().withMessage('password must be a string'),
+  body("name").notEmpty().withMessage("Name is required"),
+  body("email")
+    .notEmpty()
+    .withMessage("Email is required")
+    .isEmail()
+    .withMessage("Invalid email format"),
+  body("password")
+    .notEmpty()
+    .withMessage("Password is required")
+    .isString()
+    .withMessage("Password must be a string"),
 ];
 
 export const loginUser = [
-   
-    body('email').notEmpty().withMessage('email is required').isString().withMessage('email must be a string'),
-    body('password').notEmpty().withMessage('password is required').isString().withMessage('password must be a string'),
+  body("email")
+    .notEmpty()
+    .withMessage("Email is required")
+    .isEmail()
+    .withMessage("Invalid email format"),
+  body("password")
+    .notEmpty()
+    .withMessage("Password is required")
+    .isString()
+    .withMessage("Password must be a string"),
 ];
 
 export const updateUser = [
-    body('name')
-        .optional()
-        .isString().withMessage('name must be a string'),
-
-    body('email')
-        .optional() 
-        .isString().withMessage('email must be a string'),
-
-    body('password')
-        .optional()
-        .isString().withMessage('password must be a string')
-];
-
-export const editUser = [
-    body('name').isString().withMessage('name must be a string'),
-    body('email').isString().withMessage('email must be a string'),
-    body('password').isString().withMessage('password must be a string'),
+  body("name").optional().isString().withMessage("Name must be a string"),
+  body("email").optional().isEmail().withMessage("Invalid email format"),
+  body("password")
+    .optional()
+    .isString()
+    .withMessage("Password must be a string"),
 ];

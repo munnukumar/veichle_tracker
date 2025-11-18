@@ -1,25 +1,56 @@
+// app/user/user.route.ts
+
 import { Router } from "express";
 import passport from "passport";
-import { catchError } from "../common/middleware/catch-error.middleware";
+
 import { roleAuth } from "../common/middleware/role-auth.middleware";
+import { validateRequest } from "../common/middleware/validation.middleware";
+
 import * as userController from "./user.controller";
-import { get } from "http";
-import * as userValidatior from "./user.validation";
-
-
+import * as userValidator from "./user.validation";
+import { loginRateLimiter, apiRateLimiter } from "../config/rateLimiter";
 const router = Router();
-console.log("User routes loaded");
 
-router.post("/create",userValidatior.createUser,catchError, userController.createUser)
-router.get("/profile", userController.getAllUsers)
-router.get("/:id", userController.getUserById)
-router.patch("/update", userValidatior.updateUser,catchError, roleAuth(["USER"]), userController.updateUser)
-router.post("/login",
-    userValidatior.loginUser,
-    catchError,
-    passport.authenticate("login", { session: false }),
-    userController.login)
+// Create User
+router.post(
+  "/create",
+  userValidator.createUser,
+  validateRequest,
+  userController.createUser
+);
 
+// Login
+router.post(
+  "/login",
+   loginRateLimiter,
+  userValidator.loginUser,
+  validateRequest,
+  passport.authenticate("login", { session: false }),
+  userController.login
+);
 
+// Admin: Get All Users
+router.get("/", apiRateLimiter, roleAuth(["ADMIN"]), userController.getAllUsers);
 
-export default router; 
+// User/Admin: Get by ID
+router.get("/:id", apiRateLimiter, roleAuth(["ADMIN", "USER"]), userController.getUserById);
+
+// User: Update own profile
+router.patch(
+  "/update",
+  roleAuth(["USER"]),
+  userValidator.updateUser,
+  validateRequest,
+  userController.updateUser
+);
+
+// Admin: Update KYC
+router.patch(
+  "/kyc/:id",
+  apiRateLimiter,
+  roleAuth(["ADMIN"]),
+  validateRequest,
+  userController.updateUserKYC
+);
+
+export default router;

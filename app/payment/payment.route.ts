@@ -1,43 +1,35 @@
-// src/modules/payment/payment.routes.ts
-
+// app/payment/payment.route.ts
 import { Router } from "express";
+import passport from "passport";
+import * as controller from "./payment.controller";
+import * as validator from "./payment.validation";
+import { validateRequest } from "../common/middleware/validation.middleware";
 import { roleAuth } from "../common/middleware/role-auth.middleware";
-import { catchError } from "../common/middleware/catch-error.middleware";
-import * as paymentController from "./payment.controller";
-import * as paymentValidator from "./payment.validation";
 
 const router = Router();
-console.log("Payment routes loaded");
 
-// Create Razorpay order
 router.post(
-  "/razorpay/order",
-  roleAuth(["USER", "ADMIN"]),
-  paymentValidator.createRazorpayOrder,
-  catchError,
-  paymentController.createRazorpayOrder
+  "/order",
+  passport.authenticate("jwt", { session: false }),
+  roleAuth(["USER"]),
+  validator.createRazorpayOrder,
+  validateRequest,
+  controller.createRazorpayOrder
 );
 
-// Verify Razorpay payment
 router.post(
-  "/razorpay/verify",
-  paymentValidator.verifyRazorpayPayment,
-  catchError,
-  paymentController.verifyRazorpayPayment
+  "/verify",
+  validator.verifyRazorpayPayment,
+  validateRequest,
+  controller.verifyRazorpayPayment
 );
 
-// Razorpay webhook
-router.post(
-  "/razorpay/webhook",
-  paymentController.razorpayWebhook
-);
+router.post("/razorpay/webhook", controller.razorpayWebhook);
 
 router.get(
   "/user",
-  roleAuth(["USER", "ADMIN"]),
-  catchError,
-  paymentController.getUserPayments
+  passport.authenticate("jwt", { session: false }),
+  controller.getUserPayments
 );
-
 
 export default router;

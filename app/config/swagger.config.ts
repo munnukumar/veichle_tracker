@@ -1,6 +1,7 @@
-import swaggerUi from 'swagger-ui-express';
-import swaggerDocument from '../docs/swagger.json';
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "../docs/swagger.json";
 
 export const setupSwagger = (app: any) => {
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+  console.log("swagger lodded");
+  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 };

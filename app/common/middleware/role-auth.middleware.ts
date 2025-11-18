@@ -5,58 +5,53 @@ import jwt from "jsonwebtoken";
 import process from "process";
 import { type IUser } from "../../user/user.dto";
 
-declare global {
-    namespace Express {
-      interface Request {
-        user?: User;
-      }
-    }
-
-    namespace Passport {
-        interface User {
-          user?: IUser;  // Override Passport's `user` to be of type `IUser`
-        }
-      }
-  }
-
 export const roleAuth = (roles: IUser["role"][], publicRoutes: string[] = []) =>
-    expressAsyncHandler(
-        async (req: Request, res: Response, next: NextFunction) => {
-            if (publicRoutes.includes(req.path)) {
-                next();
-                return;
-            }
-            const token = req.headers.authorization?.replace("Bearer ", "");
-            if (!token) {
-                throw createHttpError(401, {
-                    message: `Invalid token`,
-                });
-            }
-            try {
-                const decodedUser = jwt.verify(token, process.env.JWT_SECRET!) as IUser;
-                req.user = decodedUser;
-            } catch (error: any) {
-                if (error.message === "jwt expired") {
-                    throw createHttpError(401, {
-                        message: `Token expired`,
-                        data: {
-                            type: "TOKEN_EXPIRED",
-                        },
-                    });
-                }
-                throw createHttpError(400, {
-                    message: error.message,
-                });
-            }
-            const user = req.user as IUser;
-            if (!roles.includes(user.role)) {
-                const type =
-                    user.role.slice(0, 1) + user.role.slice(1).toLocaleLowerCase();
+  expressAsyncHandler(
+    async (req: Request, res: Response, next: NextFunction) => {
+      if (publicRoutes.includes(req.path)) {
+        return next();
+      }
 
-                throw createHttpError(401, {
-                    message: `${type} can not access this resource`,
-                });
-            }
-            next();
+      const token = req.headers.authorization?.replace("Bearer ", "");
+      if (!token) {
+        throw createHttpError(401, { message: "Invalid token" });
+      }
+
+      try {
+        const decodedUser = jwt.verify(token, process.env.JWT_SECRET!) as any;
+
+        // Cast locally to IUser
+        const user = {
+          ...decodedUser,
+          _id: decodedUser._id || decodedUser.id,
+        } as IUser;
+
+        // Remove id field if present
+        delete (user as any).id;
+
+        // Assign to req.user as any to avoid TS conflict
+        (req as any).user = user;
+
+        console.log("Decoded user:", user);
+      } catch (error: any) {
+        if (error.message === "jwt expired") {
+          throw createHttpError(401, {
+            message: "Token expired",
+            data: { type: "TOKEN_EXPIRED" },
+          });
         }
-    );
+        throw createHttpError(400, { message: error.message });
+      }
+
+      const user = (req as any).user as IUser;
+
+      if (!roles.includes(user.role)) {
+        const type = user.role.slice(0, 1) + user.role.slice(1).toLowerCase();
+        throw createHttpError(401, {
+          message: `${type} cannot access this resource`,
+        });
+      }
+
+      next();
+    }
+  );

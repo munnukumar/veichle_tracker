@@ -1,41 +1,86 @@
-import bcrypt from 'bcryptjs';
-import mongoose from 'mongoose';
-import { IUser } from "./user.dto"
+// app/user/user.schema.ts
 
-const UserSchema = new mongoose.Schema<IUser>(
-    {
-        name: { type: String, required: true },
-        email: { type: String, required: true, unique: true },
-        password: { type: String, required: true },
-        role: {
-            type: String,
-            enum: ["ADMIN","USER"],
-            default: "USER",
-        },
-        projectsPosted: [{ type: mongoose.Schema.Types.ObjectId, ref: "project" }],
-        projectsPurches: [{ type: mongoose.Schema.Types.ObjectId, ref: "project" }],
-        isBlocked: { type: Boolean, default: false },
-        image: { type: String },
-        isEmailVerified: { type: Boolean, default: false },
-        resetPasswordToken: { type: String },
-        resetPasswordExpires: { type: String },
-        refreshToken: { type: String, required: false, default: "", select: false },
+import { Schema, model } from "mongoose";
+import bcrypt from "bcryptjs";
+import { IUser, KycStatus } from "./user.dto";   // ✅ FIXED IMPORT
+
+const KycSchema = new Schema({
+  documentType: { type: String, enum: ["aadhaar", "passport", "license"] },
+  documentNumber: String,
+  frontImage: String,
+  backImage: String,
+  status: {
+    type: String,
+    enum: Object.values(KycStatus),   // ✅ FIXED ENUM USAGE
+    default: KycStatus.PENDING,
+  },
+  rejectionReason: String,
+  submittedAt: Date,
+  verifiedAt: Date,
+});
+
+const UserSchema = new Schema<IUser>(
+  {
+    name: { type: String, required: true, trim: true },
+
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true,
+      trim: true,
     },
-    {
-        timestamps: true,
-    }
+
+    password: {
+      type: String,
+      required: true,
+      minlength: 6,
+      select: false,
+    },
+
+    role: {
+      type: String,
+      enum: ["USER", "ADMIN"],   // ❗ FIX: must match IUser
+      default: "USER",
+    },
+
+    refreshToken: {
+      type: String,
+      select: false,
+    },
+
+    isBlocked: {
+      type: Boolean,
+      default: false,
+    },
+
+    kyc: { type: KycSchema, default: {} },
+  },
+  { timestamps: true }
 );
 
-export const hashPassword = async (password: string) => {
-    const hash = await bcrypt.hash(password, 12);
-    return hash;
-  };
+// 🔐 Hash Before Save
+UserSchema.pre("save", function (next) {
+  if (!this.isModified("password")) return next();
 
-  UserSchema.pre("save", async function (next) {
-    if (this.password) {
-      this.password = await hashPassword(this.password);
-    }
-    next();
-  });
-  
-  export default mongoose.model<IUser>("user", UserSchema);
+  bcrypt.genSalt(10)
+    .then((salt) => bcrypt.hash(this.password, salt))
+    .then((hash) => {
+      this.password = hash;
+      next();
+    })
+    .catch(next);
+});
+
+
+
+// 🔐 Compare Password
+UserSchema.methods.comparePassword = async function (enteredPassword: string) {
+  return bcrypt.compare(enteredPassword, this.password);
+};
+
+// 📌 Index
+UserSchema.index({ email: 1 });
+
+const UserModel = model<IUser>("User", UserSchema);
+export default UserModel;

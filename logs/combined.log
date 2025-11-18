@@ -424,3 +424,526 @@ Stack: UnauthorizedError: Token expired
     at /media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:295:15
     at processParams (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:582:12)
     at next (/media/ranvijay/New Volume/MyPersionalProject/Practice/Backend/Express/FreelanceHub/backend/node_modules/router/index.js:291:5)
+[2025-11-18 11:45:17] ERROR: Error occurred: User validation failed: password: Path `password` (`12345`, length 5) is shorter than the minimum allowed length (6).
+Stack: ValidationError: User validation failed: password: Path `password` (`12345`, length 5) is shorter than the minimum allowed length (6).
+    at model.Document.invalidate (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3362:32)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3123:17
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1420:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-11-18 11:52:37] ERROR: Error occurred: User can not access this resource
+Stack: UnauthorizedError: User can not access this resource
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:56:38
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-18 11:53:11] ERROR: Error occurred: Invalid token
+Stack: UnauthorizedError: Invalid token
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:31:38
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at param (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:600:14)
+    at param (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:610:14)
+[2025-11-18 11:56:47] ERROR: Error occurred: Admin can not access this resource
+Stack: UnauthorizedError: Admin can not access this resource
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:56:38
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-18 11:57:17] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:60:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 11:58:13] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:61:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 12:00:38] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:61:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 12:02:27] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:61:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 12:06:38] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:61:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 12:08:22] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:61:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 12:10:36] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:61:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 12:12:09] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:61:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 12:18:38] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:61:42
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 13:01:43] ERROR: Error occurred: Admin cannot access this resource
+Stack: UnauthorizedError: Admin cannot access this resource
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:50:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-18 13:04:10] ERROR: Error occurred: User not found
+Stack: NotFoundError: User not found
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/user/user.controller.ts:87:44
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 13:36:27] ERROR: Error occurred: Invalid token
+Stack: UnauthorizedError: Invalid token
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:17:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-18 13:40:31] ERROR: Error occurred: Invalid token
+Stack: UnauthorizedError: Invalid token
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:17:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at param (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:600:14)
+    at param (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:610:14)
+[2025-11-18 14:56:21] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 14:58:04] ERROR: Error occurred: Booking validation failed: totalAmount: Path `totalAmount` is required.
+Stack: ValidationError: Booking validation failed: totalAmount: Path `totalAmount` is required.
+    at model.Document.invalidate (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3362:32)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3123:17
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1420:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-11-18 14:59:51] ERROR: Error occurred: Vehicle is already booked for these dates
+Stack: ConflictError: Vehicle is already booked for these dates
+    at Object.createBooking (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.service.ts:22:26)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:10:19
+[2025-11-18 15:10:02] ERROR: Error occurred: Booking amount missing
+Stack: BadRequestError: Booking amount missing
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/payment/payment.controller.ts:25:37
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 15:24:22] ERROR: Error occurred: undefined
+Stack: undefined
+[2025-11-18 15:26:47] ERROR: Error occurred: undefined
+Stack: undefined
+[2025-11-18 15:41:54] ERROR: Error occurred: Failed to create Razorpay order
+Stack: InternalServerError: Failed to create Razorpay order
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/payment/payment.controller.ts:52:28
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 16:11:06] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 16:11:35] ERROR: Error occurred: Cast to ObjectId failed for value "SUCCESS" (type string) at path "_id" for model "Payment"
+Stack: CastError: Cast to ObjectId failed for value "SUCCESS" (type string) at path "_id" for model "Payment"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOneAndUpdate (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:3477:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/payment/payment.controller.ts:110:21
+[2025-11-18 16:13:54] ERROR: Error occurred: Cast to ObjectId failed for value "SUCCESS" (type string) at path "_id" for model "Payment"
+Stack: CastError: Cast to ObjectId failed for value "SUCCESS" (type string) at path "_id" for model "Payment"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOneAndUpdate (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:3477:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/payment/payment.controller.ts:110:21
+[2025-11-18 16:19:42] ERROR: Error occurred: Cast to ObjectId failed for value "6691c4717d070e350705f40cc" (type string) at path "_id" for model "Payment"
+Stack: CastError: Cast to ObjectId failed for value "6691c4717d070e350705f40cc" (type string) at path "_id" for model "Payment"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOneAndUpdate (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:3477:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/payment/payment.controller.ts:114:21
+[2025-11-18 16:28:17] ERROR: Error occurred: Invalid Razorpay signature
+Stack: BadRequestError: Invalid Razorpay signature
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/payment/payment.controller.ts:111:28
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:20:12)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 16:30:00] ERROR: Error occurred: Invalid Razorpay signature
+Stack: BadRequestError: Invalid Razorpay signature
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/payment/payment.controller.ts:115:28
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:20:12)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 16:43:26] ERROR: Error occurred: Booking not found
+Stack: NotFoundError: Booking not found
+    at Object.cancelBooking (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.service.ts:99:38)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:33:20
+[2025-11-18 17:31:57] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-18 17:32:23] ERROR: Error occurred: User cannot access this resource
+Stack: UnauthorizedError: User cannot access this resource
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:50:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-18 17:36:15] ERROR: Error occurred: Booking not found
+Stack: NotFoundError: Booking not found
+    at Object.cancelBooking (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.service.ts:101:38)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:33:20
+[2025-11-18 17:37:37] ERROR: Error occurred: Booking not found
+Stack: NotFoundError: Booking not found
+    at Object.cancelBooking (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.service.ts:101:38)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:33:20
+[2025-11-18 19:01:21] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:03:17] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:03:51] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:09:54] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:10:22] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:11:19] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:11:46] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:12:31] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:13:42] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:13:42] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:14:16] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 19:14:42] ERROR: Error occurred: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+Stack: CastError: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Booking"
+    at SchemaObjectId.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)
+    at SchemaObjectId.SchemaType.applySetters (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1262:12)
+    at SchemaObjectId.SchemaType.castForQuery (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1698:17)
+    at cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/cast.js:390:32)
+    at model.Query.Query.cast (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:5060:12)
+    at model.Query.Query._castConditions (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2374:10)
+    at model.Query._findOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:2697:8)
+    at model.Query.exec (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/query.js:4627:80)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:23:21
+[2025-11-18 20:27:54] ERROR: Error occurred: User not found
+Stack: UnauthorizedError: User not found
+    at Strategy._verify (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/services/passport-jwt.service.ts:77:36)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-18 20:28:28] ERROR: Error occurred: Invalid token
+Stack: UnauthorizedError: Invalid token
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:17:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-18 20:30:02] ERROR: Error occurred: Expected ',' or '}' after property value in JSON at position 27 (line 2 column 26)
+Stack: SyntaxError: Expected ',' or '}' after property value in JSON at position 27 (line 2 column 26)
+    at JSON.parse (<anonymous>)
+    at parse (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/types/json.js:77:19)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:238:16)
+    at done (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+[2025-11-18 20:30:10] ERROR: Error occurred: Admin cannot access this resource
+Stack: UnauthorizedError: Admin cannot access this resource
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:50:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-18 20:32:36] ERROR: Error occurred: Unexpected token '"', ""string"" is not valid JSON
+Stack: SyntaxError: Unexpected token '"', ""string"" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/types/json.js:156:10)
+    at parse (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/types/json.js:71:15)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:238:16)
+    at done (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at IncomingMessage.emit (node:domain:489:12)
+[2025-11-18 20:33:07] ERROR: Error occurred: User cannot access this resource
+Stack: UnauthorizedError: User cannot access this resource
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:50:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-18 20:33:47] ERROR: Error occurred: invalid token
+Stack: BadRequestError: invalid token
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:43:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-18 20:35:56] ERROR: Error occurred: Unexpected token '"', ""string"" is not valid JSON
+Stack: SyntaxError: Unexpected token '"', ""string"" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/types/json.js:156:10)
+    at parse (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/types/json.js:71:15)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:238:16)
+    at done (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at IncomingMessage.emit (node:domain:489:12)
+[2025-11-18 20:37:36] ERROR: Error occurred: Unexpected token '"', ""string"" is not valid JSON
+Stack: SyntaxError: Unexpected token '"', ""string"" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/types/json.js:156:10)
+    at parse (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/types/json.js:71:15)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:238:16)
+    at done (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at IncomingMessage.emit (node:domain:489:12)
+[2025-11-18 20:40:51] ERROR: Error occurred: User cannot access this resource
+Stack: UnauthorizedError: User cannot access this resource
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:50:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-18 20:48:50] ERROR: Error occurred: E11000 duplicate key error collection: car_rental.users index: email_1 dup key: { email: "munnu@gmail.com" }
+Stack: MongoServerError: E11000 duplicate key error collection: car_rental.users index: email_1 dup key: { email: "munnu@gmail.com" }
+    at InsertOneOperation.handleOk (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/insert.ts:79:13)
+    at tryOperation (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/execute_operation.ts:290:26)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async executeOperation (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/execute_operation.ts:119:12)
+    at async Collection.insertOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/collection.ts:294:12)
+[2025-11-18 20:53:42] ERROR: Error occurred: Vehicle is already booked for these dates
+Stack: ConflictError: Vehicle is already booked for these dates
+    at Object.createBooking (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.service.ts:54:26)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:12:21
+[2025-11-18 20:55:38] ERROR: Error occurred: User cannot access this resource
+Stack: UnauthorizedError: User cannot access this resource
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:50:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
