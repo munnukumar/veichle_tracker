@@ -2,7 +2,7 @@ import { AvailabilityModel } from "./availability.schema";
 
 export class AvailabilityService {
   async ensure(vehicleId: string) {
-    let record = await AvailabilityModel.findOne({ vehicleId });
+    let record = await AvailabilityModel.findOne({ vehicleId }).populate("vehicleId");
     if (!record) record = await AvailabilityModel.create({ vehicleId });
     return record;
   }

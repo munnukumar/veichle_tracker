@@ -947,3 +947,126 @@ Stack: UnauthorizedError: User cannot access this resource
     at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
     at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
     at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-19 13:23:41] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 15:10:58] ERROR: Error occurred: Invalid email or password
+Stack: UnauthorizedError: Invalid email or password
+    at Strategy._verify (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/services/passport-jwt.service.ts:87:36)
+[2025-11-19 16:12:09] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-19 16:12:49] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:17:28] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:19:48] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:20:21] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:34:43] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:34:54] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:34:56] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:35:52] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:37:48] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:38:35] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-19 16:39:50] ERROR: Error occurred: Vehicle validation failed: numberPlate: Path `numberPlate` is required., type: Path `type` is required., title: Path `title` is required.
+Stack: ValidationError: Vehicle validation failed: numberPlate: Path `numberPlate` is required., type: Path `type` is required., title: Path `title` is required.
+    at model.Document.invalidate (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3362:32)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3123:17
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1420:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-11-19 16:40:25] ERROR: Error occurred: Vehicle validation failed: type: `Car` is not a valid enum value for path `type`.
+Stack: ValidationError: Vehicle validation failed: type: `Car` is not a valid enum value for path `type`.
+    at model.Document.invalidate (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3362:32)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3123:17
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1420:9
+    at processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-11-19 16:42:24] ERROR: Error occurred: E11000 duplicate key error collection: car_rental.vehicles index: numberPlate_1 dup key: { numberPlate: "BRO1AB406" }
+Stack: MongoServerError: E11000 duplicate key error collection: car_rental.vehicles index: numberPlate_1 dup key: { numberPlate: "BRO1AB406" }
+    at InsertOneOperation.handleOk (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/insert.ts:79:13)
+    at tryOperation (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/execute_operation.ts:290:26)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async executeOperation (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/execute_operation.ts:119:12)
+    at async Collection.insertOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/collection.ts:294:12)
+[2025-11-19 16:42:31] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)

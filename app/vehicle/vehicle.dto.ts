@@ -3,13 +3,15 @@
 export interface IVehicle {
   _id: string;
   title: string;
-  type: "car" | "bike" | "van" | "bus" | "truck";
+  type: "Four Wheeler" | "Two Wheeler";
   numberPlate: string;
   brand?: string;
   model?: string;
   color?: string;
+  description?: string
   price: number;
-   isAvailable: boolean;
+  isAvailable: boolean;
+  image?: string;
   lastUnavailableFrom?: Date | null;
   lastUnavailableTo?: Date | null;
   isActive: boolean;
