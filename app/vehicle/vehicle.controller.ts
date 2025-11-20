@@ -9,6 +9,7 @@ const service = new VehicleService();
 export const createVehicle = asyncHandler(
   async (req: Request, res: Response) => {
     const vehicle = await service.create(req.body);
+    console.log("data :", req.body)
     res
       .status(201)
       .send(createResponse(vehicle, "Vehicle created successfully"));

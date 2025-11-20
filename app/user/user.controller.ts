@@ -47,7 +47,8 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
 // Get User by ID
 // ---------------------------------------------------------------------
 export const getUserById = asyncHandler(async (req: Request, res: Response) => {
-  const user = await userService.fetchUserById(req.params.id);
+  const userId = (req.user as any)._id;
+  const user = await userService.fetchUserById(userId);
 
   if (!user) throw createHttpError(404, "User not found");
 

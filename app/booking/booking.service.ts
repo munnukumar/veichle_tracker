@@ -81,6 +81,14 @@ export const fetchBookingById = async (bookingId: string) => {
 };
 
 // -------------------------------
+// Fetch Booking for users
+// -------------------------------
+export const fetchUserBooking = async (userId: string) => {
+  console.log("userID : ", userId);
+  return BookingModel.find({ userId }).populate("userId").populate("vehicleId");
+};
+
+// -------------------------------
 // Update Booking After Payment
 // -------------------------------
 export const updateBookingPayment = async (
@@ -134,7 +142,7 @@ export const cancelBooking = async (bookingId: string, userId: string) => {
         speed: "normal",
       });
 
-      await paymentService.updatePaymentStatus(tx._id, "REFUNDED");
+      await paymentService.updateStatusByOrderId(tx._id, "REFUNDED");
     }
   }
 
@@ -160,7 +168,7 @@ export const cancelBooking = async (bookingId: string, userId: string) => {
 export const getAdminBookingHistory = async () => {
   // Step 1 → Get vehicles owned by admin
   const history = await BookingModel.find()
-    .select(["from", "to", "totalAmount", "status", "paymentStatus", "isPaid" ])
+    .select(["from", "to", "totalAmount", "status", "paymentStatus", "isPaid"])
     .populate("userId", "name email")
     .populate("vehicleId", "title type numberPlate price")
     .sort({ from: -1 })

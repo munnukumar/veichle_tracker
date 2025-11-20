@@ -84,22 +84,10 @@
         }
       }
     },
-    "/users/{id}": {
+    "/users/me": {
       "get": {
         "tags": ["User"],
         "summary": "Get user by ID",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "objectId"
-            },
-            "description": "User ID"
-          }
-        ],
         "security": [
           {
             "bearerAuth": []

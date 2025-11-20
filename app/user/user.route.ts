@@ -33,7 +33,7 @@ router.post(
 router.get("/", apiRateLimiter, roleAuth(["ADMIN"]), userController.getAllUsers);
 
 // User/Admin: Get by ID
-router.get("/:id", apiRateLimiter, roleAuth(["ADMIN", "USER"]), userController.getUserById);
+router.get("/me", apiRateLimiter, roleAuth(["ADMIN", "USER"]), userController.getUserById);
 
 // User: Update own profile
 router.patch(

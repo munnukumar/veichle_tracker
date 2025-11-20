@@ -11,7 +11,7 @@ const router = Router();
 router.post(
   "/create",
   passport.authenticate("jwt", { session: false }),
-  validator.createBooking,
+  // validator.createBooking,
   validateRequest,
   controller.createBooking
 );
@@ -20,6 +20,12 @@ router.get(
   "/history",
   roleAuth(["ADMIN"]), // Only admin can access
   controller.getAdminBookingHistory
+);
+
+router.get(
+  "/my-booking",
+  passport.authenticate("jwt", { session: false }),
+  controller.getUserBooking
 );
 
 router.get(

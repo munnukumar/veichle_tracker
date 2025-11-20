@@ -25,6 +25,15 @@ export const getBookingById = asyncHandler(
   }
 );
 
+export const getUserBooking = asyncHandler(
+  async (req: Request, res: Response) => {
+    const userId = (req.user as any)._id
+    console.log("userId ", userId)
+    const booking = await bookingService.fetchUserBooking(userId);
+    res.send(createResponse(booking, "User Booking fetched"));
+  }
+);
+
 export const cancelBooking = asyncHandler(
   async (req: Request, res: Response) => {
     const bookingId = req.params.id;

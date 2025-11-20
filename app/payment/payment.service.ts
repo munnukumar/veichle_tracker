@@ -1,4 +1,3 @@
-// app/payhttps://desktop.postman.com/?desktopVersion=11.69.6&webVersion=11.69.6-ui-251031-0111&userId=49635407&teamId=11173050&region=usment/payment.service.ts
 import { PaymentModel } from "./payment.schema";
 import { IPayment } from "./payment.dto";
 import { BookingModel } from "../booking/booking.schema";
@@ -15,7 +14,6 @@ export const findPendingTransaction = async (
   userId: string,
   bookingId: string
 ) => {
-  console.log("order data :", userId);
   return PaymentModel.findOne({
     user: userId,
     booking: bookingId,
@@ -35,66 +33,40 @@ export const updateTransactionOrderId = async (
   );
 };
 
-// Update payment using transaction ID
-export const updatePaymentStatus = async (
-  paymentId: string,
-  status: "PENDING" | "SUCCESS" | "FAILED" | "REFUNDED",
-  razorpayPaymentId?: string
+// Update payment using Razorpay order ID (for webhook & verification)
+export const updateStatusByOrderId = async (
+  orderId: string,
+  status: "SUCCESS" | "FAILED" | "REFUNDED",
+  paymentId?: string
 ) => {
-  // 1️⃣ Update the payment first
-  const payment = await PaymentModel.findByIdAndUpdate(
-    paymentId,
-    {
-      paymentStatus: status,
-      transactionId: razorpayPaymentId || paymentId,
-    },
+  const payment = await PaymentModel.findOneAndUpdate(
+    { transactionId: orderId },
+    { paymentStatus: status, transactionId: paymentId || orderId },
     { new: true }
   );
 
   if (!payment) return null;
 
-  // 2️⃣ If SUCCESS — update the booking also
+  // Update booking status based on payment result
+  const bookingUpdate: any = {};
   if (status === "SUCCESS") {
-    await BookingModel.findByIdAndUpdate(
-      payment.booking,
-      {
-        status: "CONFIRMED",
-        paymentStatus: "SUCCESS",
-        isPaid: true,
-      },
-      { new: true }
-    );
+    bookingUpdate.status = "CONFIRMED";
+    bookingUpdate.paymentStatus = "SUCCESS";
+    bookingUpdate.isPaid = true;
+  } else if (status === "FAILED") {
+    bookingUpdate.status = "CANCELLED";
+    bookingUpdate.paymentStatus = "FAILED";
+    bookingUpdate.isPaid = false;
   }
 
-  // 3️⃣ If FAILED — update booking status
-  if (status === "FAILED") {
-    await BookingModel.findByIdAndUpdate(
-      payment.booking,
-      {
-        status: "CANCELLED",
-        paymentStatus: "FAILED",
-        isPaid: false,
-      },
-      { new: true }
-    );
+  if (Object.keys(bookingUpdate).length) {
+    await BookingModel.findByIdAndUpdate(payment.booking, bookingUpdate, {
+      new: true,
+    });
   }
 
   return payment;
 };
-
-// Update payment using Razorpay order ID (webhook)
-export const updateStatusByOrderId = async (
-  orderId: string,
-  status: "SUCCESS" | "FAILED",
-  paymentId?: string
-) => {
-  return PaymentModel.findOneAndUpdate(
-    { transactionId: orderId },
-    { paymentStatus: status, transactionId: paymentId },
-    { new: true }
-  );
-};
-
 // Get all user payments
 export const getPaymentsByUser = async (userId: string) => {
   return PaymentModel.find({ user: userId }).populate("booking").lean();
