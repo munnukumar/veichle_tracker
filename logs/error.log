@@ -1550,3 +1550,494 @@ Stack: ValidationError: User validation failed: role: `` is not a valid enum val
     at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/document.js:3123:17
     at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongoose/lib/schemaType.js:1420:9
     at processTicksAndRejections (node:internal/process/task_queues:85:11)
+[2025-11-21 10:11:40] ERROR: Error occurred: Invalid email or password
+Stack: UnauthorizedError: Invalid email or password
+    at Strategy._verify (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/services/passport-jwt.service.ts:87:36)
+[2025-11-21 10:36:11] ERROR: Error occurred: E11000 duplicate key error collection: car_rental.vehicles index: numberPlate_1 dup key: { numberPlate: "bjbb" }
+Stack: MongoServerError: E11000 duplicate key error collection: car_rental.vehicles index: numberPlate_1 dup key: { numberPlate: "bjbb" }
+    at InsertOneOperation.handleOk (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/insert.ts:79:13)
+    at tryOperation (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/execute_operation.ts:290:26)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async executeOperation (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/operations/execute_operation.ts:119:12)
+    at async Collection.insertOne (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/mongodb/src/collection.ts:294:12)
+[2025-11-21 11:45:03] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 11:45:03] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 11:45:04] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 11:45:04] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 11:45:04] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 11:45:04] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 11:45:04] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 11:45:04] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 12:32:01] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 12:32:01] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 12:32:08] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 12:32:08] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:44] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:44] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:45] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:45] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:45] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:45] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:46] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:46] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:46] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:46] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:56] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:15:56] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 15:39:13] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 15:39:45] ERROR: Error occurred: To date must be greater than From date
+Stack: BadRequestError: To date must be greater than From date
+    at Object.createBooking (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.service.ts:28:26)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:12:42
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:20:12)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at complete (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/passport/lib/middleware/authenticate.js:280:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/passport/lib/middleware/authenticate.js:287:15
+[2025-11-21 15:55:11] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-21 15:55:25] ERROR: Error occurred: Validation error!
+Stack: BadRequestError: Validation error!
+    at validateRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/validation.middleware.ts:14:30)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at middleware (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-validator/lib/middlewares/check.js:16:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-11-21 16:11:25] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 16:11:25] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 16:12:57] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 16:12:57] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 18:02:36] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 18:02:36] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 18:28:28] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 18:29:13] ERROR: Error occurred: Invalid token
+Stack: UnauthorizedError: Invalid token
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:17:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 18:31:15] ERROR: Error occurred: Invalid token
+Stack: UnauthorizedError: Invalid token
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:17:30
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:295:15
+    at processParams (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:582:12)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/index.js:291:5)
+[2025-11-21 18:59:37] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 18:59:37] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 18:59:38] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 18:59:38] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 18:59:39] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 18:59:39] ERROR: Error occurred: Token expired
+Stack: UnauthorizedError: Token expired
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/common/middleware/role-auth.middleware.ts:38:32
+    at asyncUtilWrap (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-async-handler/index.js:3:20)
+    at Layer.handleRequest (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/router/lib/route.js:157:13)
+    at /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:942:7
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/node_modules/express-rate-limit/dist/index.cjs:825:5
+[2025-11-21 19:17:05] ERROR: Error occurred: Booking already cancelled
+Stack: BadRequestError: Booking already cancelled
+    at Object.cancelBooking (/Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.service.ts:127:26)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async /Users/75way-mac-57/Downloads/rvsingh/carRental/backend/app/booking/booking.controller.ts:45:20

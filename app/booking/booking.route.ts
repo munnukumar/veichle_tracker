@@ -23,6 +23,12 @@ router.get(
 );
 
 router.get(
+  "/active",
+  roleAuth(["ADMIN"]), // Only admin can access
+  controller.getActiveBooking
+);
+
+router.get(
   "/my-booking",
   passport.authenticate("jwt", { session: false }),
   controller.getUserBooking

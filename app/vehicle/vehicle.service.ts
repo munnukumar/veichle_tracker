@@ -16,9 +16,13 @@ export class VehicleService {
     return VehicleModel.findByIdAndUpdate(id, data, { new: true });
   }
 
-  async findAll() {
-    return VehicleModel.find();
-  }
+ async findAll() {
+  const vehicles = await VehicleModel.find();
+  const total = await VehicleModel.countDocuments();
+
+  return { vehicles, total };
+}
+
 
   async findById(id: string) {
     return VehicleModel.findById(id);

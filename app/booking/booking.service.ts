@@ -176,3 +176,48 @@ export const getAdminBookingHistory = async () => {
 
   return history;
 };
+
+export const getActiveBookings = async () => {
+  try {
+    // 1️⃣ Normalize today's date to UTC midnight
+    const now = new Date();
+    const todayUTC = new Date(
+      Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())
+    );
+
+    // 2️⃣ Fetch full booking history
+    const history = await BookingModel.find()
+      .select([
+        "from",
+        "to",
+        "totalAmount",
+        "status",
+        "paymentStatus",
+        "isPaid",
+      ])
+      .populate("userId", "name email")
+      .populate("vehicleId", "title type numberPlate price")
+      .sort({ from: -1 })
+      .lean();
+
+    // 3️⃣ Count bookings where today is inside the range (from <= today <= to)
+    // const activeCount = await BookingModel.countDocuments({
+    //   from: { $lte: todayUTC },
+    //   to: { $gte: todayUTC },
+    //   status: { $in: ["PENDING" || "CONFIRMED"] },
+    // });
+
+    const activeCount = await BookingModel.countDocuments({
+      from: { $lte: todayUTC },
+      to: { $gte: todayUTC },
+      status: { $in: ["PENDING", "CONFIRMED"] }, // ✅ correct
+    });
+
+    console.log("Active bookings count:", activeCount);
+
+    return { history, activeCount };
+  } catch (error) {
+    console.error("Error fetching active bookings:", error);
+    return { history: [], activeCount: 0 };
+  }
+};

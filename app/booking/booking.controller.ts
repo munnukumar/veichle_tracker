@@ -27,8 +27,8 @@ export const getBookingById = asyncHandler(
 
 export const getUserBooking = asyncHandler(
   async (req: Request, res: Response) => {
-    const userId = (req.user as any)._id
-    console.log("userId ", userId)
+    const userId = (req.user as any)._id;
+    console.log("userId ", userId);
     const booking = await bookingService.fetchUserBooking(userId);
     res.send(createResponse(booking, "User Booking fetched"));
   }
@@ -39,6 +39,9 @@ export const cancelBooking = asyncHandler(
     const bookingId = req.params.id;
     const userId = (req.user as any)._id;
 
+    console.log("userIdd@@@: ", userId);
+    console.log("booking isss : ", bookingId);
+
     const result = await bookingService.cancelBooking(bookingId, userId);
 
     res.send(createResponse(result, "Booking cancelled successfully"));
@@ -47,6 +50,12 @@ export const cancelBooking = asyncHandler(
 
 export const getAdminBookingHistory = asyncHandler(async (req, res) => {
   const history = await bookingService.getAdminBookingHistory();
+
+  res.send(createResponse(history, "Admin booking history fetched"));
+});
+
+export const getActiveBooking = asyncHandler(async (req, res) => {
+  const history = await bookingService.getActiveBookings();
 
   res.send(createResponse(history, "Admin booking history fetched"));
 });

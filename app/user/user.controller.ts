@@ -80,10 +80,13 @@ export const updateUser = asyncHandler(async (req: Request, res: Response) => {
 // ---------------------------------------------------------------------
 export const updateUserKYC = asyncHandler(
   async (req: Request, res: Response) => {
+    console.log("req : ", req);
     const updatedUser = await userService.updateUserKYC(
       req.params.id,
       req.body
     );
+
+    console.log("upddated data : ", updatedUser);
 
     if (!updatedUser) throw createHttpError(404, "User not found");
 
